@@ -10,12 +10,13 @@
 function makeLoadedDie() {
   var list = [5, 4, 6, 1, 6, 4, 2, 3, 3, 5];
   /* your code here */
-  var arrayPlaceId = -1;
+  var arrayPlaceId = 0;
 
   return function() {
     /* your code here */
+    var array = arrayPlaceId
     arrayPlaceId += 1
-    return list[arrayPlaceId]
+    return list[array]
   }
 }
 
